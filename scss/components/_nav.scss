@@ -1,0 +1,27 @@
+.nav{
+  
+    padding: 1rem;
+    height: 10vh; /*backrounda 100vh verip nav ve footer a 10 ar vh veriyoruz geri kalan 80vh maine veriyoruz yükseklik olarak*/
+    &__list{ /*& ampersan bu .nav demek*/
+        text-align: right;
+    }
+    &__item{
+        display: inline;/*navlar yan yana gelir*/
+        padding: 1rem;
+    }
+    &__link{
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: $font-family;
+        // transition: all 1s;
+        @include transition(1s);
+        &:hover{
+            color: blue;
+        }
+        &--active{
+            color: $secondary-color;
+        }
+    }
+
+}
