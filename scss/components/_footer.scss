@@ -1,0 +1,21 @@
+.link-style{  /*extend tanımladık*/
+    a{
+        padding: 0.4rem;
+        @include transition(1s);
+        &:hover{
+            color: $secondary-color;
+        }
+    }
+}
+
+
+
+
+footer.horizontal{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem;
+    @extend .link-style ;
+}  /*tanımlanan extend i burada kullandık çalışması için ve başka yerlerde de kullanabiliriz*/
